@@ -1,0 +1,218 @@
+{
+  "info": {
+    "name": "SportVar API - AA5 EV03",
+    "_postman_id": "11111111-1111-1111-1111-111111111111",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Login",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/auth/login",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "auth",
+            "login"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"usuario\": \"alejandro\", \"clave\": \"sportvar123\"}"
+        }
+      }
+    },
+    {
+      "name": "Validar sesión",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/auth/validate",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "auth",
+            "validate"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Listar variantes",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/variants?gene=ACTN3",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "variants"
+          ],
+          "query": [
+            {
+              "key": "gene",
+              "value": "ACTN3"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "Detalle de variante",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/variants/1",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "variants",
+            "1"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Buscar variantes (POST)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/variants/search",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "variants",
+            "search"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"gene\": \"ACE\"}"
+        }
+      }
+    },
+    {
+      "name": "Resumen",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/variants/summary/report",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "variants",
+            "summary",
+            "report"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Exportar CSV",
+      "request": {
+        "method": "GET",
+        "url": {
+          "raw": "http://localhost:3000/api/variants/export/csv",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "variants",
+            "export",
+            "csv"
+          ]
+        }
+      }
+    },
+    {
+      "name": "Conectar Google Drive",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          }
+        ],
+        "url": {
+          "raw": "http://localhost:3000/api/variants/files/connect-drive",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "variants",
+            "files",
+            "connect-drive"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\"driveEmail\": \"alejandro@example.com\", \"folderName\": \"SportVar\"}"
+        }
+      }
+    },
+    {
+      "name": "Logout",
+      "request": {
+        "method": "POST",
+        "url": {
+          "raw": "http://localhost:3000/api/auth/logout",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "3000",
+          "path": [
+            "api",
+            "auth",
+            "logout"
+          ]
+        }
+      }
+    }
+  ]
+}

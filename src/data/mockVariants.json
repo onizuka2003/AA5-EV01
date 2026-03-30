@@ -1,0 +1,54 @@
+[
+  {
+    "id": 1,
+    "sampleId": "DEP001",
+    "gene": "ACTN3",
+    "chromosome": "11",
+    "position": 66560624,
+    "rsid": "rs1815739",
+    "reference": "C",
+    "alternative": "T",
+    "genotype": "CT",
+    "impact": "moderado",
+    "consequence": "missense_variant"
+  },
+  {
+    "id": 2,
+    "sampleId": "DEP002",
+    "gene": "ACE",
+    "chromosome": "17",
+    "position": 63477061,
+    "rsid": "rs4343",
+    "reference": "A",
+    "alternative": "G",
+    "genotype": "AG",
+    "impact": "bajo",
+    "consequence": "synonymous_variant"
+  },
+  {
+    "id": 3,
+    "sampleId": "DEP003",
+    "gene": "MSTN",
+    "chromosome": "2",
+    "position": 190510696,
+    "rsid": "rs1805086",
+    "reference": "A",
+    "alternative": "G",
+    "genotype": "AG",
+    "impact": "moderado",
+    "consequence": "missense_variant"
+  },
+  {
+    "id": 4,
+    "sampleId": "DEP001",
+    "gene": "ACTN3",
+    "chromosome": "11",
+    "position": 66560710,
+    "rsid": "rs540874",
+    "reference": "G",
+    "alternative": "A",
+    "genotype": "GA",
+    "impact": "bajo",
+    "consequence": "intron_variant"
+  }
+]
